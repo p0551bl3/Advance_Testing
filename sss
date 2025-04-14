@@ -1,0 +1,24 @@
+[1mdiff --git a/src/main/java/poly/testing/lab6/LoginTestWithExcel.java b/src/main/java/poly/testing/lab6/LoginTestWithExcel.java[m
+[1mindex 12693e3..0392a27 100644[m
+[1m--- a/src/main/java/poly/testing/lab6/LoginTestWithExcel.java[m
+[1m+++ b/src/main/java/poly/testing/lab6/LoginTestWithExcel.java[m
+[36m@@ -2,6 +2,7 @@[m [mpackage poly.testing.lab6;[m
+ [m
+ import org.apache.poi.ss.usermodel.*;[m
+ import org.apache.poi.xssf.usermodel.XSSFWorkbook;[m
+[32m+[m[32mimport org.junit.jupiter.api.BeforeAll;[m
+ import org.openqa.selenium.By;[m
+ import org.openqa.selenium.WebDriver;[m
+ import org.openqa.selenium.WebElement;[m
+[36m@@ -12,6 +13,11 @@[m [mimport java.io.IOException;[m
+ [m
+ public class LoginTestWithExcel {[m
+ [m
+[32m+[m[32m    @BeforeAll[m
+[32m+[m[32m    public static void xinChaoTest() {[m
+[32m+[m[32m        System.out.println("Hello baby");[m
+[32m+[m[32m    }[m
+[32m+[m
+     public static void main(String[] args) {[m
+         // Khởi tạo Workbook và Sheet[m
+         Workbook workbook = new XSSFWorkbook();[m
