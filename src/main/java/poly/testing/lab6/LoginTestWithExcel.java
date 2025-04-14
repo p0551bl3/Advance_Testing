@@ -2,6 +2,7 @@ package poly.testing.lab6;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +12,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class LoginTestWithExcel {
+
+    @BeforeAll
+    public static void xinChaoTest() {
+        System.out.println("Hello baby");
+    }
 
     public static void main(String[] args) {
         // Khởi tạo Workbook và Sheet
